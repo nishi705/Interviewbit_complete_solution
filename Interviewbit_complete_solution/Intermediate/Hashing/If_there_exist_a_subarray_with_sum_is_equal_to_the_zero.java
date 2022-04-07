@@ -1,0 +1,2 @@
+package Hashing;public class If_there_exist_a_subarray_with_sum_is_equal_to_the_zero {
+}
