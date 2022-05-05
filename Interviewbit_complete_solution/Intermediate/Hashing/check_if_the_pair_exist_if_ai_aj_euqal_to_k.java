@@ -3,7 +3,7 @@ package Hashing;
 import java.util.HashSet;
 import java.util.Set;
 
-public class p1 {
+public class check_if_the_pair_exist_if_ai_aj_euqal_to_k {
     public static void main(String[] args) {
        int[] A = {2,9,11,9,5};
        int k =18;

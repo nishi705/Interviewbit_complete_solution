@@ -1,2 +1,5 @@
-package LinkedList;public class length_of_linkedlist {
+package LinkedList;
+
+public class length_of_linkedlist {
+
 }
