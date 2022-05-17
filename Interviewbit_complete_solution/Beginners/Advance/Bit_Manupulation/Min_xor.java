@@ -11,7 +11,6 @@ public class Min_xor {
             val = A[i]^A[i+1];
             min = Math.min(min,val);
         }
-
         return min;
 
     }
