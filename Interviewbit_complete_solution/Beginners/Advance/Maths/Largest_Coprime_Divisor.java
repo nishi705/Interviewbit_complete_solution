@@ -7,21 +7,20 @@ public class Largest_Coprime_Divisor {
         if(A==0){
             return B;
         }
-
         if(A>=B){
             return GCD(A%B,B);
         }
         return GCD(B%A,A);
-
     }
-
     public int cpFact(int A, int B) {
         if(GCD(A,B)==1){
             return A;
         }
 
-        //here using this A/GCD(A,B) we are trying tp remove the largest divisor one by one from A…
-        //i.e at every iteration divide A by GCD(A,B)  until GCD(A,B)==1;;
+      //  Here, first we will remove the common factors of x and y from x
+        //  by finding the greatest common divisor (gcd) of x and y and dividing x
+        //  with that gcd
+        //Now, we repeat STEP1 till we get gcd(x, y) = 1.
         return cpFact(A/GCD(A,B),B);
     }
     //    static int GCD(int a,int b){
@@ -57,8 +56,5 @@ public class Largest_Coprime_Divisor {
 //
 //        }
 //       // System.out.println(val);
-
-
-
     }
 }
