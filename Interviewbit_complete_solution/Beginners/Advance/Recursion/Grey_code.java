@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Grey_code {
     public static void main(String[] args) {
+        System.out.println(1/2);
 
         int a = 3;
         grayCode(a);
@@ -17,6 +18,7 @@ public class Grey_code {
             return list;
         }
         ArrayList<Integer> list = grayCode(a - 1);
+
        // System.out.println(list);
         /*
         [0]
@@ -24,6 +26,7 @@ public class Grey_code {
         [0, 1, 3, 2]
          */
         int numtoadd = 1 << (a - 1);
+       // System.out.println(numtoadd);
         for (int i = list.size() - 1; i >= 0; i--) {
             list.add(numtoadd + list.get(i));
         }
